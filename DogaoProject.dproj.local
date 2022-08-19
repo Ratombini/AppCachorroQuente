@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/12 19:24:33.000.015,=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/12 19:35:15.000.980,=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/08/12 19:52:16.000.810,C:\Projetos\AppDogao\uFrmLogin.pas=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/12 19:52:16.000.810,C:\Projetos\AppDogao\uFrmLogin.fmx=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/08/12 19:52:31.000.787,C:\Projetos\AppDogao\uDataModule.dfm=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/08/12 19:52:31.000.787,C:\Projetos\AppDogao\uDataModule.pas=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/08/12 19:52:43.000.210,C:\Projetos\AppDogao\DogaoProject.dproj=D:\Users\fgbezerra\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

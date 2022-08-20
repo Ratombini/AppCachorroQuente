@@ -13,6 +13,7 @@ object dm: Tdm
     Top = 8
   end
   object FDQUsuario: TFDQuery
+    IndexesActive = False
     Connection = Connection
     SQL.Strings = (
       'select * from usuario')
@@ -45,6 +46,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object FDQPessoanome: TStringField
       FieldName = 'nome'
@@ -112,6 +114,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object FDQProdutonome: TStringField
       FieldName = 'nome'

@@ -9,7 +9,7 @@ uses
   FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.Phys.SQLiteWrapper,
   FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.FMXUI.Wait, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client, IOUtils;
 
 type
   Tdm = class(TDataModule)
@@ -85,6 +85,11 @@ begin
 
   Connection.ExecSQL(strSQL);
 
+  strSQL := 'create table IF NOT EXISTS usuario(' +
+            'idusuario integer not null primary key autoincrement,' +
+            'usuario varchar(40),' +
+            'senha varchar(40))';
+
   FDQPessoa.Active := true;
   FDQProduto.Active := true;
 end;
@@ -97,7 +102,11 @@ begin
   strPath := Sytem.IOUtils.TPath.Combine
   (System.IOUtils.tPath.GetDocumetsPath,
   'bancoDados.db');
-  {$ENDIF}
+{$ENDIF}
+{$IFDEF MSWINDOWS}
+strPath := System.IOUtils.TPath.Combine
+('C:\projetodogao\DataBase','data.db');
+{$ENDIF}
   Connection.Params.Values['UseUnicode'] :='False';
   Connection.Params.Values['DATABASE'] := strPath;
 end;
